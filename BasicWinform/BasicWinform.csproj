@@ -103,5 +103,11 @@
   <ItemGroup>
     <None Include="Resources\myavatar.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\add.png" />
+    <Content Include="Icons\delete.png" />
+    <Content Include="Icons\delete2.png" />
+    <Content Include="Icons\edit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

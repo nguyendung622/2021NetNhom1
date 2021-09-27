@@ -35,5 +35,17 @@ namespace BasicWinform
                 txtQueQuan.Text = person.HomeTown;
             }
         }
+
+        private void picAvatar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "File ảnh(*.png, *.jpg)|*.png;*.jpg";
+            dialog.Title = "Chọn ảnh đại diện";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                var fileName = dialog.FileName;
+                picAvatar.ImageLocation = fileName;
+            }
+        }
     }
 }
